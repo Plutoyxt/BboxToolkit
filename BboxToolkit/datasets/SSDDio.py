@@ -22,7 +22,7 @@ def load_dior(img_dir, ann_dir=None, classes=None, xmltype='obb', nproc=10):
     assert xmltype in ['hbb', 'obb']
     assert osp.isdir(img_dir), f'The {img_dir} is not an existing dir!'
     assert ann_dir is None or osp.isdir(ann_dir), f'The {ann_dir} is not an existing dir!'
-    classes = get_classes('DIOR' if classes is None else classes)
+    classes = get_classes('SSDD' if classes is None else classes)
     cls2lbl = {cls: i for i, cls in enumerate(classes)}
 
     contents = []
