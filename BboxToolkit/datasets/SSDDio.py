@@ -36,7 +36,7 @@ def load_dior(img_dir, ann_dir=None, classes=None, xmltype='obb', nproc=10):
     img_list = os.listdir(img_dir)
     contents = prog_map(_load_func, img_list, nproc)
     end_time = time.time()
-    print(f'Finishing loading DIOR {xmltype}, get {len(contents)} images,',
+    print(f'Finishing loading SSDD {xmltype}, get {len(contents)} images,',
           f'using {end_time-start_time:.3f}s.')
 
     return contents, classes
