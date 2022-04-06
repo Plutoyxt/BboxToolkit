@@ -26,7 +26,7 @@ def load_dior(img_dir, ann_dir=None, classes=None, xmltype='obb', nproc=10):
     cls2lbl = {cls: i for i, cls in enumerate(classes)}
 
     contents = []
-    print(f'Starting loading DIOR {xmltype} dataset information.')
+    print(f'Starting loading SSDD {xmltype} dataset information.')
     start_time = time.time()
     _load_func = partial(_load_dior_single,
                          img_dir=img_dir,
