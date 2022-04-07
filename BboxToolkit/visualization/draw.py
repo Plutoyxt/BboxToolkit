@@ -84,7 +84,7 @@ def draw_obb(ax,
                     rotation=angle,
                     rotation_mode='anchor',
                     fontsize=font_size,
-                    transform_rotates_text=True,
+                    #transform_rotates_text=True,
                     verticalalignment='bottom',
                     horizontalalignment='left')
 
